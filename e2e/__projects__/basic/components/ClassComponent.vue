@@ -17,6 +17,7 @@ import { Options, Vue } from 'vue-class-component'
 export default class ClassComponent extends Vue {
   dataText: string = ''
   get computedMsg(): string {
+    debugger
     return `Message: ${(this.$props as any).msg}`
   }
 
